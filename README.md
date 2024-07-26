@@ -29,7 +29,7 @@ Apart from this, we have used JSON Web Token (JWT) to add authentication. Using 
 
 1. **Clone the repo from GitHub**
    ```sh
-   git clone https://github.com/Vikashkatiyar/Expense-tracker-Api.git
+   git clone https://github.com/rahul_kh01/Expense-analyzer.git
    cd expense-tracker-api
    ```
 
