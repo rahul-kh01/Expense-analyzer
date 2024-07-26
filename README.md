@@ -1,29 +1,28 @@
-# expense-tracker-api
+
+
+# Expense-Tracker-API
 
 REST API for tracking expenses.
 
-A RESTful API created using Spring Boot. We have used PostgreSQL as the relational database and JdbcTemplate to interact with that.
-Apart from this, we have used JSON Web Token (JWT) to add authentication. Using JWT, we can protect certain endpoints and ensure that user must be logged-in to access those.
+A RESTful API created using Spring Boot. We have used PostgreSQL as the relational database and JdbcTemplate to interact with it. Additionally, JSON Web Token (JWT) is used for authentication. JWT helps protect certain endpoints, ensuring that users must be logged in to access them.
 
 ## Used Tools and Technologies:
 
-      Spring Boot 3.0.10
-      
-      >. spring-boot-devtools
-      >. Spring-boot-starter-jdbc
-      >. spring-boot-starter-web
-      >. JSON Web Token (JWT)
-      
-      DataBase
-      
-      >.postgresql
-      
-      Tools
-      
-      >. STS(Spring tool suite)
-      >. PostMan
+- Spring Boot 3.0.10
 
+  >. spring-boot-devtools
+  >. spring-boot-starter-jdbc
+  >. spring-boot-starter-web
+  >. JSON Web Token (JWT)
 
+- DataBase
+
+  >. postgresql
+
+- Tools
+
+  >. STS (Spring Tool Suite)
+  >. PostMan
 
 ## Setup and Installation
 
@@ -35,18 +34,21 @@ Apart from this, we have used JSON Web Token (JWT) to add authentication. Using 
 
 2. **Create database objects**
 
-   In the root application directory (expense-tracker-api), SQL script file (expensetracker_db.sql) is present for creating all database objects
-   
-4. Update database configurations in application.properties**
-   
-   If your database is hosted at some cloud platform or if you have modified the SQL script file with some different username and password, update the src/main/resources/application.properties file accordingly:
+   In the root application directory (`expense-tracker-api`), there is an SQL script file (`expensetracker_db.sql`) for creating all database objects.
+
+3. **Update database configurations in `application.properties`**
+
+   If your database is hosted on a cloud platform or if you have modified the SQL script file with a different username and password, update the `src/main/resources/application.properties` file accordingly:
    ```properties
    spring.datasource.url=jdbc:postgresql://localhost:5432/expensetrackerdb
    spring.datasource.username=expensetracker
    spring.datasource.password=password
    ```
-5. **Run the spring boot application**
+
+4. **Run the Spring Boot application**
    ```sh
    ./mvnw spring-boot:run
    ```
-   this runs at port 8080 and hence all enpoints can be accessed starting from http://localhost:8080
+   This runs on port 8080, so all endpoints can be accessed starting from `http://localhost:8080`.
+
+---
